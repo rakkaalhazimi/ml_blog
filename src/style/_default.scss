@@ -1,0 +1,76 @@
+// Default tag style
+*,
+*::before,
+*::after {
+  // Layout
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  // Typography
+  font-weight: normal;
+
+  // Appearance
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  color: $color-text-light;
+  &:focus {outline: none;}
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: $color-text-dark;
+
+  &:hover {fill: $color-accent;}
+}
+
+
+// Content Style
+#app {
+  // Layout
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  // Typography
+  font: normal 16px/1.5 Arial, sans-serif;
+
+  // Appearance
+  background: $color-dominant;
+  color: $color-text-dark;
+}
+
+nav, footer, section {
+  // Tidy up every section in the page
+  padding: 2vh 5vw;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+footer {
+  // Pin footer on bottom
+  margin-top: auto;
+}
